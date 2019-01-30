@@ -1,0 +1,793 @@
+/*Сецификация*/
+/*подключение шрифта 'Museo Sans Cyrl-100'*/
+@font-face {
+    font-family: 'Museo Sans Cyrl', Arial, sans-serif;
+    src: url(fonts/Museo Sans Cyrl-100.ttf);
+}
+body {
+	font-family: 'Museo Sans Cyrl-100', Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	color: #000;
+	/*overflow: hidden;*/
+}
+/*подключение шрифта 'Museo Sans Cyrl-900'*/
+@font-face {
+    font-family: 'Museo Sans Cyrl', Arial, sans-serif;
+    src: url(fonts/Museo Sans Cyrl-900.ttf);
+}
+h1, h2, h3, h4 {
+	font-family: 'Museo Sans Cyrl-900', Arial, sans-serif;
+	font-weight: 900;
+	line-height: 0.95em;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 {
+	font-size: 90px;
+	letter-spacing: 0.4em;
+}
+h2 {
+	font-size: 42px;
+	margin: 60px 0;
+	letter-spacing: 0.13em;
+}
+h3 {
+	font-size: 20px;
+
+}
+h4 {
+	font-size: 18px;
+}
+p, .circle, .circle-phone, .merit__item:after {
+	text-align: center;
+}
+ul, li, p, a, nav, div {
+	line-height: 1em;
+}
+li {
+	list-style-type: none;
+}
+
+/*---------главный экран-------*/
+header {
+	background: url(../img/fon1.jpeg) top center no-repeat;
+	height: 700px;
+	object-fit: cover;
+	color: #fff;
+	
+}
+/*Фон в меню*/
+#header {
+	background: rgba(0, 0, 0, 0.28);
+	margin-bottom: 167px;
+}
+/*Float элементы в первом экране*/
+.logo, .block-menu, .menu-item {
+	float: left;
+}
+  
+.block-phone {
+	float: right;
+}
+/*пункты меню*/
+.menu-item {
+	font-weight: 900;
+	color: rgba(255, 255, 255, 0.96);
+	padding-top: 14px;
+	text-transform: uppercase;
+	font-size: 11px;
+	margin-right: 25px;
+}
+
+.single-item {
+	height: 140px;
+	width: 700px;
+	margin: 0 auto;
+}
+/*меню при наведении*/
+.menu-item:hover {
+	background: #355c70;
+	padding: 10px;
+	border-radius: 6px;
+	margin-top: 5px;
+	color: #fff;
+}
+/*цвет пунктов меню*/
+.item:hover, .menu, .item, .menu:hover {
+	color: rgba(255, 255, 255, 0.98);
+	list-style-type: none;
+}
+
+/*блок телефона*/
+.block-phone {
+	display: inline-block;
+    margin-top: 15px;
+}
+.phone-head {
+	color: #23aae2;
+}
+.phone-item {
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0.01em;
+}
+.icon-bars {
+	font-size: 32px;
+	display: none;
+}
+/*номер телефона на остальных страницах*/
+.phone1 {
+	border-bottom: 1px dotted #fff;
+	padding: 5px 0;
+}
+/*кружок вокруг трубки*/
+.circle-phone {
+	display: inline-block;
+    float: left;
+    border: 1px dashed #1f91c2;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+}
+/*оффер*/
+.offer__down-text {
+	margin: 24px 0 136px 0;
+}
+.offer__down, .offer__contact, .offer__movie, .offer__about {
+	font-size: 51px;
+}
+/*кружок вокруг некоторых элементов*/
+.circle {
+	border: 1px dashed #fff;
+	border-radius: 50%;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	margin: 0 auto;
+}
+.circl-fa {
+	display: inline-block;	
+}
+/*иконочный шрифт*/
+.offer-arrow {
+	font-size: 32px;
+}
+.block-merit {
+	background: #f4f4f4;
+	
+	box-shadow: 0 0 7px rgba(134, 132, 132, 0.69);
+}
+/*Иконки в блоке с преимуществами*/
+.icon1 {
+	background: url(../img/icon1.png) 50% 58px no-repeat;
+	padding-bottom: 20%;
+}
+.icon2 {
+	background: url(../img/icon2.png) 50% 58px no-repeat;
+	padding-bottom: 9.5%;
+}
+.icon3 {
+	background: url(../img/icon3.png) 50% 58px no-repeat;
+	padding-bottom: 15%;
+}
+.merit__item {
+	padding: 170px 0 15px 0;
+}
+/*полосочка в блоке с преимуществами*/
+.merit__item:after {
+	content: '';
+	display: block;
+	clear: both;
+	margin: 23px auto 0 auto;
+    width: 11%;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.19);
+}
+.item__text {
+	width: 303px;
+	margin: 0 auto;
+	line-height: 1.15em;
+	font-size: 17px;
+	color: rgba(0, 0, 0, 0.8);
+	letter-spacing: 0.01em;
+}
+/*Секция с переездом*/
+#moving {
+	margin-top: 100px;
+	background: url(../img/fon2.jpeg);
+	color: #fff;
+}
+/*верхний блок*/
+.moving__block-up {
+	margin-bottom: 60px;
+}
+.moving__header {
+	padding: 36px 0 0 0;
+	margin-bottom: 30px;
+}
+/*подключение шрифта 'Museo Sans Cyrl W03 100 Italic'*/
+@font-face {
+    font-family: 'Museo Sans Cyrl', Arial, sans-serif;
+    src: url(fonts/Museo Sans Cyrl W03 100 Italic.ttf);
+}
+.block-up__text {
+	font-family: 'Museo Sans Cyrl W03 100 Italic', Arial, sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 1.5em;
+	width: 643px;
+	margin: 0 auto;
+}
+/*автор*/
+.Jim {
+	font-family: 'Museo Sans Cyrl-900', Arial, sans-serif;
+	font-weight: 900;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-style: normal;
+	display: block;
+}
+/*блок со стрелками пунктирный*/
+#moving {
+	position: relative;
+}
+.moving__block {
+	border: 1px dashed #fff;
+	width: 770px;
+	margin: 0 auto;
+}
+.circle-moving {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	background: #263d4f;
+	left: 50%;
+	margin-left: -25px;
+}
+.circle-moving__up {
+	top: 36%
+}
+.circle-moving__down {
+	top: 55%
+}
+.block-text {
+	font-size: 23px;
+    margin: 39px 0 58px 0;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+}
+.time {
+	font-family: 'Museo Sans Cyrl-100', Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 100;
+	display: block;
+}
+/*нижний блок*/
+.block-down__header {
+	font-size: 37px;
+    margin-bottom: 13px;
+    letter-spacing: 0.03em;
+}
+.block-down__text {
+	font-size: 18px;
+    letter-spacing: 0.05em;
+}
+/*кнопка*/
+.button-block {
+	text-align: center;
+    margin: 75px 0 80px 0;
+    
+}
+.button {
+	border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+}
+.button-moving {
+	color: #fff;
+	border: 1px solid #fff; 
+	width: 215px;
+    line-height: 60px;
+    height: 60px;
+    display: inline-block;
+}
+/*секция с услугами*/
+#services {
+	background: url(../img/city.png);
+	position: relative;
+}
+
+/*Заголовок услуг*/
+.services__header {
+	margin: 90px 0 20px 0;
+	letter-spacing: 0em;
+}
+/*.services__block, .images {
+	position: relative;
+}*/
+
+/*позиционирование картинок*/
+.img-left, .img-right, .img1 {
+	position: absolute;
+}
+.images {
+	margin-top: 7%;
+}
+.img1 {
+    left: 36%;
+    top: -52%;
+}
+.img-left {
+	left: 31%;
+}
+.img-right {
+	left: 54%;
+}
+/*заголовок блока с услугами*/
+.block-header {
+	margin: 76px 0 0 0;
+	padding: 70px 0 0px 0;
+}
+/*Заголовок секции с услугами*/
+.services__block {
+	background: #f4f4f4;
+	box-shadow: 0 0 5px rgba(149, 147, 147, 0.33);
+    width: 770px;
+    margin: -18px auto 0;
+    position: relative;
+    top: 84px;
+}
+/*нижняя часть*/
+.block-down {
+	margin: 1% auto 0 auto;
+}
+.services__text {
+	width: 625px;
+	margin: 0 auto;
+	letter-spacing: 0.01em;
+    line-height: 1.5em;
+    padding: 20px 0 35px 0;
+}
+.text-down {
+	width: 685px;
+}
+/*иконка в кружке*/
+.iconic {
+	border: none;
+    margin: -67px auto 0 auto;
+    background: #23aae2;
+    font-size: 26px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+}
+.iconic-img {
+	color: #fff;
+}
+/*кнопка в секции с услугами*/
+.services__button {
+	border: 2px solid #23aae2;
+	color: #23aae2;
+	margin-top: 71px;
+}
+/*секция с отзывами*/
+#reviews {
+
+}
+.slick__up:after {
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+.single-item {
+	display: block;
+}
+.foto {
+	position: absolute;
+	left: 22%;
+	top: 0;
+}
+.slick {
+	margin-top: 15px;
+	width: 100%;	
+}
+.reviews-slider {
+	width: 58%;
+	margin: 0 auto;
+	box-shadow: 0 3px 3px rgba(149, 147, 147, 0.33);
+}
+.slick-prev {
+	content: '\003C';
+}
+.navigate {
+	position: absolute;
+	width: 100%;
+	font-size: 45px;
+	margin-top: 3%;
+}
+.slider-arrow {
+	position: absolute;
+	color: #23aae2;
+}
+.arrow-left {
+	left: 10%;
+}
+.arrow-right {
+	right: 10%;
+}
+.reviews-text {
+	width: 516px;
+	margin: 0 auto;
+	padding-bottom: 35px;
+}
+.slick-name, .slick-e-mail, .foto, .slick {
+	float: left;
+}
+.slick-address {
+	float: right;
+}
+.slick-name, .slick-e-mail, .slick-address {
+	margin: 0 0 30px 0;
+}
+.slick-address, .slick-e-mail {
+	color: #23aae2;
+	font-size: 12px;
+	padding: 2px 0 3px 0;
+	text-transform: uppercase;
+}
+.slick-e-mail {
+	margin: 0 42px;
+    
+	border-bottom: 1px solid #23aae2;
+	font-weight: 900;
+}
+.slick-name {
+	font-size: 16px;
+}
+.bullit {
+    position: absolute;
+    left: 46%;
+    margin-top: 37%;
+}
+.circle-bullit {
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	border: 1px dashed #23aae2;
+	float: left;
+    margin-right: 5px;
+}
+.circle-bullit:hover {
+	background: #23aae2;
+}
+/*секция с формой*/
+#registration, #movie-form {
+	background: url(../img/fon3.jpeg);
+	margin-top: 100px;
+	color: #fff;
+}
+/*выравнивание по середине*/
+.registration__header, .advice, input, button {
+	margin: 0 auto;
+}
+/*заголовок секции*/
+.registration__header {
+	width: 760px;
+	letter-spacing: 0.09em;
+	padding: 60px 0 20px 0;
+}
+.advice {
+	font-size: 21px;
+	text-transform: uppercase;
+	width: 330px;
+}
+/*кружок со стрелочкой*/
+.circle-form {
+	margin: 40px auto 30px auto;
+}
+/*окошко ввода в форме*/
+input {
+	background: #30c2ff;
+	display: block;
+	width: 370px;
+	height: 70px;
+	margin-bottom: 10px;
+	border: 1px solid #fff;
+	padding-left: 30px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+input:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+}
+/*кнопка в форме*/
+button {
+	background: blue;
+	text-align: center;
+	display: block;
+	border: 1px solid #fff;
+	margin: 20px auto 60px auto;
+}
+.registration-button {
+	padding: 26px 63px;
+}
+.button-form, .form-text {
+	color: #fff;	
+}
+/*футер*/
+footer {
+	background: #23aae2;
+	color: #fff;
+	height: 90px;
+	box-shadow: 0 0 53px rgba(0, 0, 0, 0.26)
+}
+.wrapper-footer {
+	padding: 17px 0;
+}
+.footer-text {
+	margin: 21px 50px;
+}
+.text-left {
+	float: left;
+}
+.text-right {
+	float: right;
+}
+.Phone-footer {
+	color: #fff;
+}
+.private {
+	border-bottom: 1px dotted #fff;
+	padding-top: 5px;
+	margin-top: 17px;
+}
+.circle-footer {
+	border: 1px dashed #fff;
+}
+
+/*-------Страница с контактами-----------*/
+
+
+/*Контакты (contact)*/
+#registration-contact {
+	margin-top: -1%;
+	background: #f7f7f7;
+	height: 630px;
+}
+.phone2 {
+	display: none;
+}
+/*оффер*/
+.offer__contact, .offer__movie, .offer__about {
+	letter-spacing: 0.03em;
+	margin: 0 0 5% 0;
+}
+/*блок выходит за рамки*/
+.wrapper {
+	background: #fff;
+	margin-top: -10%;
+	height: 655px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+.contact-info {
+	font-size: 17px;
+	display: block;
+	padding-top: 60px;
+}
+/*иконки*/
+.wrapper-icon {
+	margin: 130px 0 10px 10px;
+}
+.contact-icon {
+	margin: 30px 0;
+}
+/*контакты с телефоном*/
+.contact-phone {
+	font-size: 16px;
+}
+.contact-item, .head-icon {
+	text-align: start;
+	padding: 0 0 7px 150px;
+}
+.contact-phone {
+	margin-top: 0;
+}
+/*иконки*/
+.icon-phone {
+	background: url(../img/Phone-48.png) 90px 7px no-repeat;
+}
+.icon-mail {
+	background: url(../img/Email-48.png) 90px 7px no-repeat;
+}
+.icon-skype {
+	background: url(../img/Skype-48.png) 90px 7px no-repeat;
+}
+/*форма*/
+.contact-form {
+	background: #11b2f5;
+	color: #fff;
+	width: 470px;
+	height: 450px;
+}
+.form__header {
+	font-size: 25px;
+	padding: 40px 15px 0 15px;
+	margin-bottom: 0;
+	letter-spacing: 0.01em;
+	line-height: 1em;
+}
+.form-moving {
+	font-size: 20px;
+	display: block;
+}
+.advice-form {
+	font-size: 18px;
+	padding: 0 10px 10px 10px;
+	width: 290px;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+.contact__form-text {
+	font-size: 11px;
+	width: 370px;
+	height: 56px;
+	border-radius: 3px;
+	color: #fff;
+}
+.contact__button {
+	padding: 18px 60px;
+}
+
+
+/*---Страница с недвижимостью и переездом---*/
+/*Недвижимость и переезд*/
+/*заголовок секции*/
+.movie-info {
+	padding-top: 60px;
+}
+.movie-header, .about-header, .block-clients, .blue-block {
+	font-weight: 900;
+}
+.movie-header {
+	display: block;
+}
+/*блок с информацией о переезле*/
+.block-movie {
+	margin-top: 60px;
+}
+/*картинка*/
+.img-movie {
+	margin-bottom: 100px;
+}
+.block-movie__text {
+	text-align: left;
+	padding-top: 20px;
+	line-height: 1.2em;
+}
+.block-movie__img {
+	margin: 50px 0 0 80px;
+}
+.text-movie {
+	width: 470px;
+}
+
+
+/*---Страница с информацией о компании---*/
+/*about*/
+/*высота выступающего блока*/
+.wrapper-about {
+	height: 1000px;
+}
+/*блок с клиентами*/
+.block-clients, .blue-block {
+	text-transform: uppercase;
+}
+.about-info {
+	width: 766px;
+    margin: 50px auto;
+}
+/*окончание текста*/
+.text-end {
+	display: block;
+}
+.block-clients {
+	text-align: center;	
+}
+/*черточка под именем*/
+.block-clients:after {
+	content: '';
+	clear: both;
+	width: 100%;
+	display: block;
+}
+.blue-text {
+	color: #23aae2;
+	display: block;
+}
+/*блок с голубым фоном*/
+.blue-block {
+	font-size: 23px;
+	background: #23aae2;
+	text-align: center;
+	padding: 20px 0;
+	margin: 30px 0;
+	color: #fff;
+}
+/*в левом блоке под заголовком*/
+.dozens {
+	font-size: 39px;
+}
+.first-block__text {
+	font-size: 15px;
+}
+/*средний блок*/
+.middle {
+	font-weight: 100;
+	font-size: 19px;
+	padding-top: 5px;
+	color: #bdbdbd;
+	letter-spacing: 0.5em;
+}
+/*правый блок*/
+.block-clients_fird {
+	font-size: 30px;
+    padding-top: 8px;
+}
+/*выравнивание по левому краю*/
+.block-clients_first, .block-clients_fird, .middle {
+	float: left;
+	margin: 0 10px;
+}
+.block-clients_first {
+	padding-left: 215px;
+}
+.block-clients_first, .middle {
+	line-height: 3.5em;
+}
+.header-partners {
+	margin: 15px 0 40px 0;
+}
+/*блок с партнерами*/
+.partners {
+	padding: 20px;
+	width: 470px;
+	background: #f4f4f4;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.33);
+}
+.foto-partner {
+	margin: 0 auto;
+    padding: 20px 0;
+    display: block;
+}
+.name-partner {
+	font-size: 21px;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+}
+/*черточка под именем*/
+.name-partner:after {
+	content: '';
+	clear: both;
+	width: 40px;
+	height: 1px;
+	display: block;
+	margin: 20px auto;
+	background: rgba(0, 0, 0, 0.19);
+}
+.partner-text {
+	text-align: justify;
+	padding: 0 25px 25px 25px;
+	line-height: 1.3em;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.8);
+}
